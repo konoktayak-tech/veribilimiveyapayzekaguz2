@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oktay Konak | Eğitimci & Geliştirici</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: #e1f0fa;
+            color: var(--secondary-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.8rem;
+            transition: transform 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+            color: #e1f0fa;
+        }
+
+        .contact-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Oktay Konak</h1>
+        <p>Sosyal Bilgiler Öğretmeni | Full-Stack Yazılım Geliştirici | eTwinning Proje Koordinatörü</p>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/oktay-konak-a26467217" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/oktaykonak" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/oktaykonak61/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/oktaykonak61/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="http://fuatsezgin.meb.k12.tr/" target="_blank" title="Okul Web Sitesi"><i class="fas fa-school"></i></a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="section">
+            <h2>Hakkımda</h2>
+            <p>Konya Karatay'da Prof. Dr. Fuat Sezgin Ortaokulu'nda Sosyal Bilgiler Öğretmeni olarak görev yapıyorum. Eğitimde dijital dönüşüme, ekolojik okuryazarlığa ve yapay zeka entegrasyonuna büyük önem veriyorum. Aynı zamanda Ankara Üniversitesi Yönetim Bilişim Sistemleri (AUZEF) bölümünde eğitimime devam ediyor ve Full-Stack yazılım geliştirme alanında projeler üretiyorum.</p>
+        </div>
+
+        <div class="grid-2">
+            <div class="section">
+                <h2>Yazılım & Teknoloji Becerileri</h2>
+                <div class="tag-cloud">
+                    <span class="tag">HTML5 & CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Veri Analizi (CSV)</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Yönetim Bilişim Sistemleri</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Projeler & Çalışmalar</h2>
+                <ul style="list-style-position: inside; margin-top: 10px;">
+                    <li><strong>TÜBİTAK 2204-B:</strong> Ortaokul öğrencileri için danışmanlık</li>
+                    <li><strong>eTwinning Projeleri:</strong> ECO-FRIENDS, Eco-Inclusion, CHRONOS</li>
+                    <li><strong>Öğrenci Takip Sistemleri:</strong> Python ile CSV tabanlı veri işleme otomasyonları</li>
+                    <li><strong>Türkiye Yüzyılı Maarif Modeli:</strong> Sınıf içi dijital materyal geliştirme</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>eTwinning & Eğitim İlgi Alanları</h2>
+            <p style="margin-bottom: 15px;">Avrupa Okul Eğitimi Platformu (ID: 783277) üzerinde aktif olarak uluslararası projeler yürütmekteyim.</p>
+            <div class="tag-cloud">
+                <span class="tag">Vatandaşlık (Citizenship)</span>
+                <span class="tag">Kültürel Çeşitlilik ve Miras (Cultural diversity and heritage)</span>
+                <span class="tag">Dijital Yeterlilik (Digital competence and tools)</span>
+                <span class="tag">Pedagoji (Pedagogy)</span>
+                <span class="tag">Sosyal Bilimler (Social sciences)</span>
+                <span class="tag">Beşeri Bilimler (Humanities)</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
